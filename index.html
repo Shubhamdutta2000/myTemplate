@@ -1,0 +1,337 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <title>First materialize</title>
+    <style>
+      header {
+        background: url("img/man.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="#" class="brand-logo">Shubham's Site</a>
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-position="bottom"
+                data-tooltip="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-position="bottom"
+                data-tooltip="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-position="bottom"
+                data-tooltip="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- photo / grid -->
+    <section class="container scrollspy section" id="photos">
+      <div class="row">
+        <div class="col s12 l4">
+          <img
+            src="img/portrait.jpg"
+            class="responsive-img materialboxed"
+            alt=""
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Portrait</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aperiam reprehenderit distinctio commodi exercitationem! Repudiandae
+            blanditiis qui architecto modi consequatur!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l9">
+          <img
+            src="img/nature.jpg"
+            class="responsive-img materialboxed"
+            alt=""
+          />
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l2">
+          <h2 class="indigo-text text-darken-4">Nature</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aperiam reprehenderit distinctio commodi exercitationem! Repudiandae
+            blanditiis qui architecto modi consequatur!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/city.jpg" class="responsive-img materialboxed" alt="" />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">CitySpace</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+            aperiam reprehenderit distinctio commodi exercitationem! Repudiandae
+            blanditiis qui architecto modi consequatur!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="" class="reponsive-img" />
+      </div>
+    </div>
+
+    <!-- services / tabs -->
+    <section class="section container scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do!!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel enim
+            consectetur impedit quia tenetur consequatur nulla, quidem commodi
+            reiciendis dicta libero minima rem nisi corporis ab corrupti cumque
+            modi architecto.
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="active indigo-text text-darken-4"
+                >Photography</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editting" class="indigo-text text-darken-4">Editting</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <h4 class="flow-text indigo-text text-darken-4">Photography</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt.
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="col s12" id="editting">
+            <h4 class="flow-text indigo-text text-darken-4">Edditing</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/stars.jpg " alt="" class="reponsive-img" />
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="container scrollspy section" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h4 class="indigo-text text-darken-4">Get in Touch</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, porro.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col s12 l5 offset-l1">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" />
+              <label for="email">our email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea
+                id="message"
+                class="materialize-textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <label for="message">message</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" class="date-picker" name="" id="date" />
+              <label for="date">Date</label>
+            </div>
+            <div class="input-field">
+              <span>Services Required</span>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Editting</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn waves-effect">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, sapiente. Quod esse illo iusto suscipit consequuntur
+              blanditiis doloribus maiores possimus aperiam corporis eius
+              tempore, qui quae impedit adipisci eaque accusantium!
+            </p>
+          </div>
+          <div class="col s12 l4 offset-l1">
+            <h2 class="white-text">Connect</h2>
+            <ul>
+              <li>
+                <a href="#" class="grey-text text-lighten-3"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="grey-text text-lighten-3"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="grey-text text-lighten-3"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </li>
+              <li>
+                <a href="#" class="grey-text text-lighten-3"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; Shubham, 2020</div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $(".materialboxed").materialbox();
+        $(".parallax").parallax();
+        $(".tabs").tabs();
+        $(".date-picker").datepicker({
+          disableWeekends: true,
+          yearRange: 1,
+        });
+        $(".tooltipped").tooltip();
+        $(".scrollspy").scrollSpy();
+      });
+    </script>
+  </body>
+</html>
